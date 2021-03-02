@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/sonngoc17899/numerogoly/static/css/main.6722bc5d.chunk.css",
-    "main.js": "/sonngoc17899/numerogoly/static/js/main.7f395ced.chunk.js",
-    "main.js.map": "/sonngoc17899/numerogoly/static/js/main.7f395ced.chunk.js.map",
-    "runtime-main.js": "/sonngoc17899/numerogoly/static/js/runtime-main.8bf12e4d.js",
-    "runtime-main.js.map": "/sonngoc17899/numerogoly/static/js/runtime-main.8bf12e4d.js.map",
-    "static/js/2.cb044848.chunk.js": "/sonngoc17899/numerogoly/static/js/2.cb044848.chunk.js",
-    "static/js/2.cb044848.chunk.js.map": "/sonngoc17899/numerogoly/static/js/2.cb044848.chunk.js.map",
-    "index.html": "/sonngoc17899/numerogoly/index.html",
-    "static/css/main.6722bc5d.chunk.css.map": "/sonngoc17899/numerogoly/static/css/main.6722bc5d.chunk.css.map",
-    "static/js/2.cb044848.chunk.js.LICENSE.txt": "/sonngoc17899/numerogoly/static/js/2.cb044848.chunk.js.LICENSE.txt"
+    "main.css": "/numerogoly/static/css/main.6722bc5d.chunk.css",
+    "main.js": "/numerogoly/static/js/main.7f395ced.chunk.js",
+    "main.js.map": "/numerogoly/static/js/main.7f395ced.chunk.js.map",
+    "runtime-main.js": "/numerogoly/static/js/runtime-main.283d84bd.js",
+    "runtime-main.js.map": "/numerogoly/static/js/runtime-main.283d84bd.js.map",
+    "static/js/2.cb044848.chunk.js": "/numerogoly/static/js/2.cb044848.chunk.js",
+    "static/js/2.cb044848.chunk.js.map": "/numerogoly/static/js/2.cb044848.chunk.js.map",
+    "index.html": "/numerogoly/index.html",
+    "static/css/main.6722bc5d.chunk.css.map": "/numerogoly/static/css/main.6722bc5d.chunk.css.map",
+    "static/js/2.cb044848.chunk.js.LICENSE.txt": "/numerogoly/static/js/2.cb044848.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8bf12e4d.js",
+    "static/js/runtime-main.283d84bd.js",
     "static/js/2.cb044848.chunk.js",
     "static/css/main.6722bc5d.chunk.css",
     "static/js/main.7f395ced.chunk.js"
