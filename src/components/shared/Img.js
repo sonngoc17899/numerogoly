@@ -3,7 +3,10 @@ import '../../scss/shared.scss'
 export const Img = props => {
     const {stage} = props;
     const listImg = {
-        homeImg: "/homeImg.png",
+        homeImg: "/numerogoly/homeImg.png",
+        headerImg: "/numerogoly/logoImg.png",
+        menuIcon: "/numerogoly/menuIcon.png",
+        fb: "/numerogoly/youtubebig.png"
     }
     return (
         <div className={props.customImg}>

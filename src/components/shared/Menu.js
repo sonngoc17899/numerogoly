@@ -2,12 +2,16 @@ import React from "react";
 import { List } from "./List";
 import { Link } from "react-router-dom";
 import "../../scss/shared.scss";
+import {Img} from './Img'
 export const Menu = (props) => {
+  const img = true;
   return (
     <div className="menu">
-      <div style={{ marginLeft: "2em" }}>
+      <div className="li" style={{ marginLeft: "2em" }}>
         <button>
-          <Link to="/">Home</Link>
+          <Link to="/numerogoly">
+            <Img stage={img ? "menuIcon": ""}/>
+          </Link>
         </button>
       </div>
       <List content="Con số chủ đạo" custom="li" href="/tin-tuc" />

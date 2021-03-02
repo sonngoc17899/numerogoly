@@ -18,10 +18,15 @@
         height: 3rem;
         line-height: 3rem;
         .logo{
-            font-size: 3rem;
+            margin-left: 4rem;
             margin-right: 5%;
             color: #4643A0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            .headerImg{
+                img{
+                    width: 5rem;
+                }
+            }
         }
         .real-time{
             margin-top: 1rem;
@@ -47,6 +52,9 @@
                 background-color: #ffffff;
                 text-decoration: none;
             }
+            button:focus {
+                outline: none;
+              }
             .header-img{
                 margin-left: 2rem;
                 img{
@@ -70,12 +78,17 @@
             margin-right: 3rem;
             margin-left: 1rem;
             font-size: 1rem;
-            font-weight: bold;
+            font-weight: 600;
             color: #4A47A3;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-decoration: none;
             a{
                 text-decoration: none;
+            }
+            button{
+                margin-left: 2rem;
+                border-radius: 50%;
+                border: none;
             }
         }
         .li a:hover{
@@ -167,6 +180,9 @@
             li{
                 display: inline-block;
                 margin-left: 1.5rem;
+                img{
+                    height: 1.5rem;
+                }
             }
         }
         
@@ -206,19 +222,19 @@
     }
 }
 @media only screen and (max-width: 1080px) {
-    // .header{
-    //     .header-content{
-    //         display: none;
-    //     }
-    //     .close-menu{
-    //         display: none;
-    //     }
-     
-    // }
+    .header{
+        .header-content{
+            display: none;
+        }
+        .close-menu{
+            display: none;
+        }
+        .header-mobile{
+            display: flex;
+        }
+    }
    
 }
 @media only screen and (max-width: 1450px) {
-    .header-mobile{
-        display: none;
-    }
+  
 }

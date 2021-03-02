@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import {Header} from './shared/Header'
 import {MobileMenu} from './shared/MobileMenu'
 import '../scss/home.scss'
+
 // import {Background} from './shared/Background'
 import {Img} from './shared/Img'
 import {Footer} from './shared/Footer'

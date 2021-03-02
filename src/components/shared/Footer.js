@@ -1,5 +1,4 @@
 import React from 'react';
-
 export const Footer = () =>{
     return(
         <div style={{marginTop: "20%"}}>
@@ -12,9 +11,11 @@ export const Footer = () =>{
                 <li>
                     <p>Theo dõi chúng tôi trên </p>
                 </li>
-                <li>FB</li>
-                <li>IG</li>
-                <li>Youtube</li>
+                <li>
+              
+                </li>
+                <li></li>
+                <li></li>
             </ul>
         </div>
     </div>

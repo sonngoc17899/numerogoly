@@ -4,7 +4,7 @@ import {Home} from './components/Home';
 function App() {
   return (
    <div>
-   <Route exact path="/" component={Home}/>
+   <Route exact path="/numerogoly" component={Home}/>
    </div>
   );
 }
