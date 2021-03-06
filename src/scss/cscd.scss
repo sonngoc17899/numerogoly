@@ -1,0 +1,60 @@
+.cscd-content{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+    .cscdTitle{
+        font-size: 2rem;
+        color: #FF9292;
+    }
+    .cscdText{
+        margin-left: 4rem;
+        display: flex;
+        .text{
+            width: 100%;
+            text-align: justify;
+        }
+        .imgCscd{
+            margin-left: 5rem;
+            margin-top: 1rem;
+            img{
+                width: 18rem;
+                height: 8rem;
+            }
+        }
+    }
+    .cscdForm{
+        margin-left: 4rem;
+        input{
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            width: 12rem;
+            height: 1.5rem;
+            margin-left: 1.5rem;
+        }
+        select{
+            margin-right: 1.5rem;
+            position: relative;
+            width: 5rem;
+            height: 1.5rem;
+            border: 1px solid #dbdbdb;
+        } 
+        button{
+            margin-top: 1rem;
+            margin-left: 3rem;
+            width: 8rem;
+            height: 2rem;
+            background-color: #ffc75f;
+            color: #fafafa;
+            font-weight: 650;
+            border: none;
+            border-radius: 4px;
+        }
+        .date-gender{
+            margin-top: 1rem;
+            .gender{
+                margin-top: 1rem;
+            }
+        }
+    }
+}

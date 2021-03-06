@@ -15,6 +15,7 @@
         padding: 1rem;
         padding-top: 0;
         display: flex;
+        justify-content: center;
         height: 3rem;
         line-height: 3rem;
         .logo{
@@ -71,19 +72,20 @@
        border-bottom: 1px solid #dbdbdb;
        height: 3rem;
        line-height: 3rem;
-    }
-    .menu{
+       .menu{
         display: flex;
+        justify-content: center;
         .li{
             margin-right: 3rem;
             margin-left: 1rem;
             font-size: 1rem;
             font-weight: 600;
-            color: #4A47A3;
+            color: #351F39;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-decoration: none;
             a{
                 text-decoration: none;
+                color: #351F39;
             }
             button{
                 margin-left: 2rem;
@@ -94,6 +96,13 @@
         .li a:hover{
             color: #FF9292;
         }
+        #isCscd{
+            a{
+                color: #FF9292;
+            } 
+        }
+    }
+    
     }
     .header-mobile{
         display: none;
@@ -155,6 +164,11 @@
     
         }  
         #isHome{
+            a{
+                color: #FF9292;
+            }    
+        }
+        #isCscd{
             a{
                 color: #FF9292;
             }    
@@ -235,6 +249,16 @@
     }
    
 }
-@media only screen and (max-width: 1450px) {
-  
+@media only screen and (min-width: 1450px) {
+    .header{
+        .header-content{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .close-menu{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+       
+    }
 }

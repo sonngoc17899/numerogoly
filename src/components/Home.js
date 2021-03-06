@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import {Header} from './shared/Header'
 import {MobileMenu} from './shared/MobileMenu'
 import '../scss/home.scss'
+import {Link} from 'react-router-dom'
 
 // import {Background} from './shared/Background'
 import {Img} from './shared/Img'
@@ -53,19 +54,23 @@ export const Home = () =>{
         <div>
             {mobile ?  <MobileMenu customHome="isHome" cancel={cancelClick}/>: ""}
          {btn ? <div> <Header time="" btn={handleClick}/>
+         
             <div className="home-main">
                 <div className="text">
                     <p>Mỗi biểu đồ ngày sinh như một thửa đất mà Vũ trụ giao cho ta làm "vốn ban đầu". Dẫu cho thừa đất ấy màu mỡ hay cẳn cỗi có chỗ đầy hay chỗ thưa…, thì nhiệm vụ của ta là cứ cố gắng bằng cả ý thức và nỗ lực, để vun xới cho mảnh đất ấy tốt tươi, đầy hoa thơm trái ngọt và rộn tiếng chim</p>
                     <div id="textClick">
                         <p>Khám phá các các số trong ngày sinh của bạn</p>
                         <div>
-                            <button>Bắt đầu ngay</button>
+                            <button>
+                                <Link to="/cscd">Bắt đầu ngay</Link>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <Img customImg="homeImg" stage={homeImg ? "homeImg" : ""}></Img>
             </div>
             <div className="home-mobile">
+            <Img customImg="mobileImg" stage={homeImg ? "homeImg" : ""}></Img>
                 <div className="custom-text">
                     Thay đổi cuộc sống với nhân số học
                 </div>
@@ -73,7 +78,14 @@ export const Home = () =>{
                     <p>Khám phá các con số trong ngày sinh của bạn</p>
                 </div>
                 <div>
-                            <button>Bắt đầu ngay</button>
+                        
+                        <button>
+                        <Link to="/cscd">
+                            Bắt đầu ngay
+                        </Link>
+                        </button>
+                        
+                          
                         </div>
             </div>
             <Footer/></div> : ""}

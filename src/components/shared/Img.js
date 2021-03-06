@@ -6,6 +6,7 @@ export const Img = props => {
         homeImg: "/numerogoly/homeImg.png",
         headerImg: "/numerogoly/logoImg.png",
         menuIcon: "/numerogoly/menuIcon.png",
+        pythago: "/numerogoly/Pythagoras.jpg",
         fb: "/numerogoly/youtubebig.png"
     }
     return (

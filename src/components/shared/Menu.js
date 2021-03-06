@@ -14,7 +14,7 @@ export const Menu = (props) => {
           </Link>
         </button>
       </div>
-      <List content="Con số chủ đạo" custom="li" href="/tin-tuc" />
+      <List content="Con số chủ đạo" customLink={props.customCscd} custom="li" href="/cscd" />
       <List content="Biểu đồ ngày sinh" custom="li" href="/category" />
       <List content="Các mũi tên chỉ điểm" custom="li" href="/category" />
       <List content="Con số ngày sinh" custom="li" href="/category" />
