@@ -14,7 +14,9 @@ export const Header = (props) =>{
                 </Link>   
                 </div>
                 <div className="real-time">
-                    {props.time}
+                <Link to="/numerogoly">
+             Numerogoly
+             </Link>
                 </div>
                 <div className="covid">
                     <button> #Chung tay đẩy lùi dịch bệnh Covid-19</button>

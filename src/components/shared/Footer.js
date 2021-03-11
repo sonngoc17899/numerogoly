@@ -1,7 +1,7 @@
 import React from 'react';
 export const Footer = () =>{
     return(
-        <div style={{marginTop: "20%"}}>
+        <div>
             <div className="footer">
         <div className="footer-text">
             <p>CoppyRight@ 2021 by Kiwi</p>

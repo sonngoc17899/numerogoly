@@ -20,7 +20,6 @@
         line-height: 3rem;
         .logo{
             margin-left: 4rem;
-            margin-right: 5%;
             color: #4643A0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             .headerImg{
@@ -31,10 +30,14 @@
         }
         .real-time{
             margin-top: 1rem;
-            margin-right: 15%;
-            color: #4643A0;
-            font-size: 1rem;
+            font-size: 1.5rem;
+            margin-right: 5%;
+            font-weight: 600;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            a{
+                text-decoration: none;
+                color: #25292e;
+            }
         }
         .covid{
             height: 4rem;
@@ -94,11 +97,11 @@
             }
         }
         .li a:hover{
-            color: #FF9292;
+            color: #7579e7;
         }
         #isCscd{
             a{
-                color: #FF9292;
+                color: #7579e7;
             } 
         }
     }
@@ -165,12 +168,12 @@
         }  
         #isHome{
             a{
-                color: #FF9292;
+                color: #7579e7;
             }    
         }
         #isCscd{
             a{
-                color: #FF9292;
+                color: #7579e7;
             }    
         }
         
@@ -180,7 +183,6 @@
 .footer{
     display: flex;
     border-top: 1px solid #dbdbdb;
-    padding-bottom: 1%;
     .footer-text{
         margin-left: 5%;
         justify-content: start;
@@ -203,6 +205,7 @@
     }
 }
 .footer-mobile{
+    padding-bottom: 0;
     display: none;
     .follow{
         text-align: center;

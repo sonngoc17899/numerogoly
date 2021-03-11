@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
 import {Home} from './components/Home';
-import {Cscd} from './components/main/Cscd';
+import {Cscd} from './components/main/Cscd/index';
 function App() {
   return (
    <div>
