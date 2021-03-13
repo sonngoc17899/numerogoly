@@ -9,13 +9,13 @@ export const Header = (props) =>{
         <div className="header">
             <div className="header-content">
                 <div className="logo">
-                    <Link to="/numerogoly">
+                    <Link to="/numerology">
                     <Img customImg="headerImg" stage={headerImg ? "headerImg" : ""}/>
                 </Link>   
                 </div>
                 <div className="real-time">
                 <Link to="/numerogoly">
-             Numerogoly
+             Numerology
              </Link>
                 </div>
                 <div className="covid">
