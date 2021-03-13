@@ -5,8 +5,8 @@ import {Cscd} from './components/main/Cscd/index';
 function App() {
   return (
    <div>
-   <Route exact path="/" component={Home}/>
-   <Route exact path="/cscd" component={Cscd}/>
+   <Route exact path="/numerology" component={Home}/>
+   <Route path="/cscd" component={Cscd}/>
    </div>
   );
 }

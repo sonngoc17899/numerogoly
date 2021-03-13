@@ -2,29 +2,10 @@ import React from 'react';
 import {Menu} from './Menu'
 import '../../scss/shared.scss'
 import {Img} from './Img'
-import {Link} from 'react-router-dom'
 export const Header = (props) =>{
     const headerImg= true;
     return(
         <div className="header">
-            <div className="header-content">
-                <div className="logo">
-                    <Link to="/numerology">
-                    <Img customImg="headerImg" stage={headerImg ? "headerImg" : ""}/>
-                </Link>   
-                </div>
-                <div className="real-time">
-                <Link to="/numerogoly">
-             Numerology
-             </Link>
-                </div>
-                <div className="covid">
-                    <button> #Chung tay đẩy lùi dịch bệnh Covid-19</button>
-                    <div className="header-img">
-                    {/* <img src="/pale-wear-mask-virus-is-everywhere.png"/> */}
-                </div>
-                </div>
-            </div>
             <div className="close-menu">
             <Menu customCscd={props.Cscd}/>
             </div>

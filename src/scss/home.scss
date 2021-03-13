@@ -5,16 +5,24 @@
   }
 .home-main{
     display: flex;
-    margin: 4rem;
+    padding-left: 15%;
+    padding-top: 0;
+    padding-right: 5%;
+    padding-bottom: 15%;
     margin-top: 0;
     .text{
       width: 60%;
-      margin-top: 4rem;
-      margin-right: 4rem;
+      margin-top: 8rem;
       text-align: justify;
-      color: #351F39;
-      font-size: 1.5rem;
+      color: #646464;
+      font-size: 1rem;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      .bold{
+        text-align: left;
+        font-size: 2rem;
+        color: #351F39;
+        font-weight: 650;
+      }
       #textClick{
         text-align: center;
         p{
@@ -40,7 +48,7 @@
     .homeImg{
       flex-grow: 1;
       img{
-        width: 30em;
+        width: 90%;
       }
     }
 }
@@ -116,19 +124,25 @@
   // }
   // }
   .home-main{
+    display: none;
     margin: 0;
     .text{
       display: none;
     }
     .homeImg{
       display: none;
+      }
+    }
+    .home-mobile{
+      display: block;
+      .mobileImg{
+        img{
+          width: 25em;
+        }
     }
   }
-  .home-mobile{
-    display: block;
-  }
 }
-@media only screen and (min-width: 1450px){
+@media only screen and (max-width: 1450px){
   .home-main{
     justify-content: center;
     padding-left: 10%;

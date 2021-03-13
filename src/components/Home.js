@@ -57,9 +57,9 @@ export const Home = () =>{
          
             <div className="home-main">
                 <div className="text">
+                    <div className="bold">Khám phá các con số trong ngày sinh của bạn</div>
                     <p>Mỗi biểu đồ ngày sinh như một thửa đất mà Vũ trụ giao cho ta làm "vốn ban đầu". Dẫu cho thừa đất ấy màu mỡ hay cẳn cỗi có chỗ đầy hay chỗ thưa…, thì nhiệm vụ của ta là cứ cố gắng bằng cả ý thức và nỗ lực, để vun xới cho mảnh đất ấy tốt tươi, đầy hoa thơm trái ngọt và rộn tiếng chim</p>
                     <div id="textClick">
-                        <p>Khám phá các các số trong ngày sinh của bạn</p>
                         <div>
                             <button>
                                 <Link to="/cscd">Bắt đầu ngay</Link>

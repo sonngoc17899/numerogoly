@@ -2,24 +2,21 @@ import React from "react";
 import { List } from "./List";
 import { Link } from "react-router-dom";
 import "../../scss/shared.scss";
-import {Img} from './Img'
+
 export const Menu = (props) => {
-  const img = true;
   return (
     <div className="menu">
-      <div className="li" style={{ marginLeft: "2em" }}>
-        <button>
-          <Link to="/numerogoly">
-            <Img stage={img ? "menuIcon": ""}/>
+      <div className="li">
+          <Link to="/numerology">
+            numerology
           </Link>
-        </button>
       </div>
-      <List content="Con số chủ đạo" customLink={props.customCscd} custom="li" href="/cscd" />
-      <List content="Biểu đồ ngày sinh" custom="li" href="/category" />
-      <List content="Các mũi tên chỉ điểm" custom="li" href="/category" />
-      <List content="Con số ngày sinh" custom="li" href="/category" />
+      <List content="CON SỐ CHỦ ĐẠO" customLink={props.customCscd} custom="li" href="/cscd" />
+      <List content="CON SỐ NGÀY SINH" custom="li" href="/category" />
+      <List content="BIỂU ĐỒ NGÀY SINH" custom="li" href="/category" />
+      <List content="CÁC MŨI TÊN" custom="li" href="/category" />
       <List
-        content="Bốn đỉnh cao của một đời người"
+        content="CÁC ĐỈNH CAO"
         custom="li"
         href="/category"
       />

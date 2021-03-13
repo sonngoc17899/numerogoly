@@ -8,8 +8,8 @@ export const MobileMenu = (props) =>{
             <button className="btn" onClick={props.cancel}>X</button>
             </div>
             <div className="mobile-list">
-            <List content="Trang chủ" custom="mobile-custom" customLink={props.customHome} href="/numerogoly"/>
-            <List content="Con số chủ đạo" customLink={props.customCscd} custom="mobile-custom" href="/category"/>
+            <List content="Trang chủ" custom="mobile-custom" customLink={props.customHome} href="/numerology"/>
+            <List content="Con số chủ đạo" customLink={props.customCscd} custom="mobile-custom" href="/cscd"/>
             <List content="Biểu đồ ngày sinh" custom="mobile-custom" href="/category"/>
             <List content="Các mũi tên chỉ đặc điểm" custom="mobile-custom" href="/category"/>
             <List content="Con số ngày sinh" custom="mobile-custom" href="/category"/>

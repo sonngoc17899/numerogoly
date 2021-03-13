@@ -26,7 +26,8 @@ export const Cscd = () => {
     job: "",
     lifePurpose: "",
     overcome: "",
-    url: ""
+    url: "",
+    22: ""
   })
   const [cscd, setCscd] = useState(1)
   const [dataFb, setDataFb] = useState([]);
@@ -71,11 +72,18 @@ return split.join(" ")
     let sumMonth = m.split("");
     let sumYear = y.split("");
     let sumNumber = sum(sumDay)+sum(sumMonth)+sum(sumYear);
-    let outNumber = "";
-    if(sumNumber >=2 && sumNumber <=10) outNumber = sumNumber;
+    let outNumber = 0;
+    if(sumNumber === 22)
+    {
+      outNumber = sumNumber;
+    }
+    else if((sumNumber >=2 && sumNumber <=10)){
+       outNumber = sumNumber;
+    }
     else{
       outNumber = (sumNumber-parseInt(sumNumber/10)*10)+parseInt(sumNumber/10);
-    } 
+    }
+    if(outNumber>11 && sumNumber !== 22) outNumber =  (outNumber-parseInt(outNumber/10)*10)+parseInt(outNumber/10);
     return outNumber;
   }
   const handleChanges = (event) => {
@@ -100,11 +108,11 @@ return split.join(" ")
       const y = handleDate(values.date)[0];
       const m = handleDate(values.date)[1];
       const d = handleDate(values.date)[2];
-      const newCscd = number(d, m, y)
+      const newCscd = number(d, m, y);
       setLoadingCscd(false)
-      setCscd(newCscd)
+      newCscd===22 ? setCscd("22/4") : setCscd(newCscd)
       let show = dataFb[0].cscd.filter((v, i, a)=>{
-      return v.id === newCscd
+      return v.id === newCscd;
       })
       setShowValues({
         development: show[0].development,
@@ -114,6 +122,7 @@ return split.join(" ")
         lifePurpose: show[0].lifePurpose,
         overcome: show[0].overcome,
         url: show[0].url,
+        22: show[0].important,
       })
     }
   }
@@ -190,6 +199,7 @@ return split.join(" ")
               month: "1",
               year: "2021",
               gender: "Nam",
+              date: ""
             });
           }}/>
        }
