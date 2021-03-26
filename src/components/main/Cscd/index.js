@@ -146,7 +146,6 @@ return split.join(" ")
       {mobile ? <MobileMenu customCscd="isCscd" cancel={cancelClick} /> : ""}
       {btn ? (
         <div>
-          {" "}
           <Header time="" Cscd="isCscd" btn={handleClick} />
           {loadingCscd ? <div className="cscd-content">
             <div className="cscdTitle">Con số chủ đạo</div>
@@ -164,14 +163,13 @@ return split.join(" ")
                 <form onSubmit={handleSubmit}>
                 <div className="title-form">Khám phá con số chủ đạo của bạn!</div>
                   <div>Họ và tên: </div>
-                  
-                      <input autoComplete="off" type="text" name="fullname" onChange={handleChanges} value={values.fullname}/>
+              
+                      <input autoComplete="off" type="text" name="fullname" onChange={handleChanges}  value={values.fullname}/>
             
                    {error ? <p>Tên không được để trống!</p> : ""}
                  <div className="date-gender">
                     <div className="date">
                         <div>Ngày sinh (Dương lịch)</div>
-             
                         <input name="date" onChange={handleChanges} value={values.date} type="date"  min="1930-01-01" max="2030-12-31"/>
                     {error1 ? <p>Ngày sinh không được để trống!</p> : ""}
                     </div>

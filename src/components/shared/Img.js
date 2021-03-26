@@ -7,7 +7,9 @@ export const Img = props => {
         headerImg: "/numerology/logoImg.png",
         menuIcon: "/numerology/menuIcon.png",
         pythago: "/numerology/Pythagoras.jpg",
-        fb: "/numerology/youtubebig.png"
+        fb: "/numerology/youtubebig.png",
+        csns: "/numerology/imgCsns.png",
+        homeIcons: "/numerology/iconsHome.png"
     }
     return (
         <div className={props.customImg}>

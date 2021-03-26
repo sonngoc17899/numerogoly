@@ -8,12 +8,12 @@ export const MobileMenu = (props) =>{
             <button className="btn" onClick={props.cancel}>X</button>
             </div>
             <div className="mobile-list">
-            <List content="Trang chủ" custom="mobile-custom" customLink={props.customHome} href="/numerology"/>
-            <List content="Con số chủ đạo" customLink={props.customCscd} custom="mobile-custom" href="/cscd"/>
-            <List content="Biểu đồ ngày sinh" custom="mobile-custom" href="/category"/>
-            <List content="Các mũi tên chỉ đặc điểm" custom="mobile-custom" href="/category"/>
-            <List content="Con số ngày sinh" custom="mobile-custom" href="/category"/>
-            <List content="Bốn đỉnh cao của một đời người" custom="mobile-custom" href="/category"/>
+            <List content="TRANG CHỦ" custom="mobile-custom" customLink={props.customHome} href="/"/>
+            <List content="CON SỐ CHỦ ĐẠO" customLink={props.customCscd} custom="mobile-custom" href="/cscd"/>
+            <List content="CON SỐ NGÀY SINH" custom="mobile-custom" href="/category"/>
+            <List content="CÁC MŨI TÊN" custom="mobile-custom" href="/category"/>
+            <List content="BIỂU ĐỒ NGÀY SINH" custom="mobile-custom" href="/category"/>
+            <List content="CÁC ĐỈNH CAO" custom="mobile-custom" href="/category"/>
             </div>
         </div>
     )

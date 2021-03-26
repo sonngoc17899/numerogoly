@@ -7,7 +7,7 @@ export const Header = (props) =>{
     return(
         <div className="header">
             <div className="close-menu">
-            <Menu customCscd={props.Cscd}/>
+            <Menu customCscd={props.Cscd} customCsns={props.Csns}/>
             </div>
             <div className="header-mobile">
                 <div className="mobile-logo">
