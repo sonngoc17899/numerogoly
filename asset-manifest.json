@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/numerology/static/css/main.fc1c6542.chunk.css",
-    "main.js": "/numerology/static/js/main.de910a74.chunk.js",
-    "main.js.map": "/numerology/static/js/main.de910a74.chunk.js.map",
+    "main.css": "/numerology/static/css/main.30cd974f.chunk.css",
+    "main.js": "/numerology/static/js/main.d12f2d99.chunk.js",
+    "main.js.map": "/numerology/static/js/main.d12f2d99.chunk.js.map",
     "runtime-main.js": "/numerology/static/js/runtime-main.7cdaca57.js",
     "runtime-main.js.map": "/numerology/static/js/runtime-main.7cdaca57.js.map",
-    "static/js/2.1e96f0d4.chunk.js": "/numerology/static/js/2.1e96f0d4.chunk.js",
-    "static/js/2.1e96f0d4.chunk.js.map": "/numerology/static/js/2.1e96f0d4.chunk.js.map",
+    "static/js/2.9cf8d26a.chunk.js": "/numerology/static/js/2.9cf8d26a.chunk.js",
+    "static/js/2.9cf8d26a.chunk.js.map": "/numerology/static/js/2.9cf8d26a.chunk.js.map",
     "index.html": "/numerology/index.html",
-    "static/css/main.fc1c6542.chunk.css.map": "/numerology/static/css/main.fc1c6542.chunk.css.map",
-    "static/js/2.1e96f0d4.chunk.js.LICENSE.txt": "/numerology/static/js/2.1e96f0d4.chunk.js.LICENSE.txt"
+    "static/css/main.30cd974f.chunk.css.map": "/numerology/static/css/main.30cd974f.chunk.css.map",
+    "static/js/2.9cf8d26a.chunk.js.LICENSE.txt": "/numerology/static/js/2.9cf8d26a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7cdaca57.js",
-    "static/js/2.1e96f0d4.chunk.js",
-    "static/css/main.fc1c6542.chunk.css",
-    "static/js/main.de910a74.chunk.js"
+    "static/js/2.9cf8d26a.chunk.js",
+    "static/css/main.30cd974f.chunk.css",
+    "static/js/main.d12f2d99.chunk.js"
   ]
 }
