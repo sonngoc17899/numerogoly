@@ -191,6 +191,7 @@ return split.join(" ")
           </div> :
           <Show name={validateName(values.fullname)} date={handleDate(values.date)[2]+"/"+handleDate(values.date)[1]+"/"+handleDate(values.date)[0]} number={cscd} cscd={cscd} dd={showValues.features} mds={showValues.lifePurpose} dkpt={showValues.grow} khkp={showValues.overcome} hpt={showValues.development}  job={showValues.job} href={showValues.url} click={()=>{
             setLoadingCscd(true);
+            window.scrollTo(0, 0);
             setValues({
               fullname: "",
               day: "1",

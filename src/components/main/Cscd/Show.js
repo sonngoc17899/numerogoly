@@ -1,6 +1,9 @@
 import React from 'react';
-import {MobileMenu} from "../../../scss/cscd.scss"
+import { useEffect } from "react";
 export const Show = (props) =>{
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return(
         <div className="show">
             <div className="showCscd">

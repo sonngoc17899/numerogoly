@@ -109,6 +109,11 @@
                 color: #7579e7;
             } 
         }
+        #isArrows{
+            a{
+                color: #7579e7;
+            } 
+        }
     }
     
     }
@@ -147,7 +152,7 @@
             font-weight: initial;
             font-size: 1.5rem;
             border: none;
-            background-color: #f7f7f7;;
+            background-color: #ffffff;
         }
         button:hover{
             cursor: pointer;
@@ -155,6 +160,7 @@
     }
     .mobile-list{
         padding: 20%;
+        padding-top: 10%;
         text-align: center;
         .mobile-custom{
             display: block;
@@ -174,6 +180,11 @@
             }    
         }
         #isCscd{
+            a{
+                color: #7579e7;
+            }    
+        }
+        #isCsns{
             a{
                 color: #7579e7;
             }    

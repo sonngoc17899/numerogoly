@@ -36,6 +36,13 @@
             width: 95%;
             height: 2rem;
             margin-top: 0.5rem;
+            background-color: white;
+        }
+        input:focus{
+            border-color: #66afe9;
+            outline: 0;     
+            outline-style: none;     
+            outline-width: 0; 
         }
         select{
             margin-top: 0.5rem;
@@ -44,6 +51,12 @@
             width: 5rem;
             height: 1.5rem;
             border: 1px solid #dbdbdb;
+        }
+        select:focus{
+            border-color: #66afe9;
+            outline: 0;     
+            outline-style: none;     
+            outline-width: 0; 
         }
         p{
             color: red;
@@ -101,6 +114,7 @@
         }
     }
     .img{
+        margin-bottom: 3rem;
         text-align: center;
     }
     .date{
@@ -131,6 +145,7 @@
         }
         .note{
             font-size: 0.8rem;
+            margin-top: 3rem;
         }
         a{
             text-decoration: none;

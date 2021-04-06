@@ -35,11 +35,7 @@ export const Csns = () => {
     setMobile(true);
     setBtn(false);
   };
-  const handleDate = (date)=>{
-    let dateArray = date.split("-") 
-    return dateArray;
-  }
-  const [cscd, setCscd] = useState(1)
+
   const [dataFb, setDataFb] = useState([]);
   useEffect(()=>{
     fetchData();
@@ -70,6 +66,10 @@ export const Csns = () => {
     return s;
   }
  
+const handleDate = (date)=>{
+    let dateArray = date.split("-") 
+    return dateArray;
+}
   const handleSubmit = (e) =>{
       e.preventDefault();
       if(values.fullname === ""){
@@ -79,12 +79,12 @@ export const Csns = () => {
         setError1(true)
       }
       if(values.fullname !== "" && values.date !== ""){
-        const day = handleDate(values.date)[2];
+        const day = parseInt(handleDate(values.date)[2]);
         const realDay = sum(day);
-        realDay===22 ? setCsns("22/4") : setCsns(realDay)
+        day === 22 ? setCsns("22/4") : setCsns(realDay)
         setLoadingCsns(false);
         let show = dataFb[0].csns.filter((v, i, a)=>{
-          return v.id === parseInt(realDay);
+          return v.id == csns;
           })
         setShowValues({
           features: show[0].features,
@@ -95,7 +95,7 @@ export const Csns = () => {
   }
   return (
     <div>
-       {mobile ? <MobileMenu customCscd="isCsns" cancel={cancelClick} /> : ""}
+       {mobile ? <MobileMenu customCsns="isCsns" cancel={cancelClick} /> : ""}
        {btn ? (
         <div>
           <Header time="" Csns="isCsns" btn={handleClick} />
@@ -137,9 +137,10 @@ export const Csns = () => {
                 </form>
             </div>
           </div> :
-          <Show csns={csns} showCsns={showValues.features} 
+          <Show name={validateName(values.fullname)} date={handleDate(values.date)[2]+"/"+handleDate(values.date)[1]+"/"+handleDate(values.date)[0]} csns={csns} showCsns={showValues.features} 
           click={()=>{
             setLoadingCsns(true);
+            window.scrollTo(0, 0);
             setValues({
               fullname: "",
               day: "1",

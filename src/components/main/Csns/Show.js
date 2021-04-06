@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Img} from '../../shared/Img';
 export const Show = (props) =>{
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
     return(
         <div className="show">
           <Img customImg="img" stage={"csns"}/>
           <div className="feature">
+          <div className="date">
+                  {props.name} ({props.date})
+          </div>
         <div className="key-feature">
           <div>{props.csnsdb}</div>
         </div>

@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import {Header} from './shared/Header'
 import {MobileMenu} from './shared/MobileMenu'
 import '../scss/home.scss'
-import {Link} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 
 // import {Background} from './shared/Background'
 import {Img} from './shared/Img'
@@ -11,6 +11,7 @@ export const Home = () =>{
     const [btn, setBtn] = useState(true)
     const [mobile, setMobile] = useState(false)
     const homeImg = true;
+    const history = useHistory();
     // const date = new Date();
     // const getDay = () =>{
     //     const date = new Date();
@@ -61,8 +62,10 @@ export const Home = () =>{
                     <p>Mỗi biểu đồ ngày sinh như một thửa đất mà Vũ trụ giao cho ta làm "vốn ban đầu". Dẫu cho thừa đất ấy màu mỡ hay cẳn cỗi có chỗ đầy hay chỗ thưa…, thì nhiệm vụ của ta là cứ cố gắng bằng cả ý thức và nỗ lực, để vun xới cho mảnh đất ấy tốt tươi, đầy hoa thơm trái ngọt và rộn tiếng chim</p>
                     <div id="textClick">
                         <div>
-                            <button>
-                                <Link to="/cscd">Bắt đầu ngay</Link>
+                            <button onClick={()=>{
+                            history.push("/con-so-chu-dao")
+                        }}>
+                                Bắt đầu ngay
                             </button>
                         </div>
                     </div>
@@ -79,10 +82,10 @@ export const Home = () =>{
                 </div>
                 <div>
                         
-                        <button>
-                        <Link to="/cscd">
+                        <button onClick={()=>{
+                            history.push("/con-so-chu-dao")
+                        }}>
                             Bắt đầu ngay
-                        </Link>
                         </button>
                         
                           

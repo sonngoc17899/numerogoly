@@ -1,0 +1,38 @@
+.arrows{
+    text-align: center;
+    padding-top: 5%;
+    .row{
+        padding-left: 35%;
+        padding-right: 35%;
+        display: flex;
+        flex-flow: row;
+        .cell{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 30%;
+            height: 100px;
+            border-right: 2px solid #66afe9;
+            border-bottom: 2px solid #66afe9;
+            font-weight: 650;
+            color: #66afe9;
+            font-size: 1.3rem;
+        }
+        #none-border{
+            border-right: none;
+        }
+        #none-border1{
+            border-right: none;
+        }
+        #none-border2{
+            border-right: none;
+            border-bottom: none;
+        }
+        #none{
+            border-bottom: none;
+        }
+        #none1{
+            border-bottom: none;
+        }
+    }
+}

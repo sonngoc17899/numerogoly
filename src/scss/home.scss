@@ -43,6 +43,12 @@
             color: #fafafa;
           }
         }
+        button:hover{
+          cursor: pointer;
+        }
+        button:focus{
+         text-decoration: none;
+        }
       }
     }
     .homeImg{
@@ -88,6 +94,7 @@
       color: #fafafa;
     }
   }
+
 }
 @media only screen and (max-width: 768px) {
   .home-main{
