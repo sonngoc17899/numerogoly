@@ -23,7 +23,7 @@ export const Show = (props) =>{
                 </a>
                 <div className="list-feature">
                 <div className="key-feature">
-                        <p>Con số chủ đạo: {props.cscd}</p>
+                        <p>CON SỐ CHỦ ĐẠO: {props.cscd}</p>
                     </div>
                     <div className="key-feature">
                         <p>{props.impotant}</p>

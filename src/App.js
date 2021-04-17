@@ -8,10 +8,9 @@ function App() {
   return (
    <div>
   <Route exact path="/" component={Home}/>
-   <Route path="/numerology" component={Home}/>
    <Route path="/con-so-chu-dao" component={Cscd}/>
    <Route path="/con-so-ngay-sinh" component={Csns}/>
-   <Route path="/mui-ten" component={Arrows}/>
+   <Route path="/cac-mui-ten" component={Arrows}/>
    </div>
   );
 }

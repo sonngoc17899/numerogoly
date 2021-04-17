@@ -100,9 +100,13 @@ return split.join(" ")
     e.preventDefault();
     if(values.fullname === ""){
       setError(true)
+    }else{
+      setError(false);
     }
     if(values.date === ""){
       setError1(true)
+    }else{
+      setError1(false);
     }
     if(values.fullname !== "" && values.date !== ""){
       const y = handleDate(values.date)[0];

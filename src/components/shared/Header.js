@@ -2,8 +2,8 @@ import React from 'react';
 import {Menu} from './Menu'
 import '../../scss/shared.scss'
 import {Img} from './Img'
+import {Link} from "react-router-dom"
 export const Header = (props) =>{
-    const headerImg= true;
     return(
         <div className="header">
             <div className="close-menu">
@@ -11,7 +11,10 @@ export const Header = (props) =>{
             </div>
             <div className="header-mobile">
                 <div className="mobile-logo">
-                <Img customImg="mobileHeaderImg" stage={headerImg ? "headerImg" : ""}/>
+                    <Link to="/">
+                    <Img customImg="mobileHeaderImg" stage={"homeIcons"}/>
+                    </Link>
+            
                 </div>
                 <div className="mobile-exit">
                 <button  className="btn" onClick={props.btn}>

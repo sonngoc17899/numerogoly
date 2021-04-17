@@ -79,19 +79,26 @@ const handleDate = (date)=>{
         setError1(true)
       }
       if(values.fullname !== "" && values.date !== ""){
-        const day = parseInt(handleDate(values.date)[2]);
+        const day = handleDate(values.date)[2];
         const realDay = sum(day);
-        day === 22 ? setCsns("22/4") : setCsns(realDay)
+        if(parseInt(day) === 22){
+          setCsns("22/4");
+        }else if(parseInt(day) === 10){
+          setCsns(10);
+        }else if(parseInt(day) === 11){
+          setCsns(11);
+        }else{
+          setCsns(realDay);
+        }
         setLoadingCsns(false);
         let show = dataFb[0].csns.filter((v, i, a)=>{
-          return v.id == csns;
+          return v.id === csns;
           })
         setShowValues({
           features: show[0].features,
           22: show[0].impotant
         })
       }
-      
   }
   return (
     <div>
