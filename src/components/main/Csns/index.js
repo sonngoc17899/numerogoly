@@ -65,7 +65,7 @@ export const Csns = () => {
     }
     return s;
   }
- 
+
 const handleDate = (date)=>{
     let dateArray = date.split("-") 
     return dateArray;
@@ -92,13 +92,19 @@ const handleDate = (date)=>{
         }
         setLoadingCsns(false);
         let show = dataFb[0].csns.filter((v, i, a)=>{
-          return v.id === csns;
+          if(parseInt(day) === 10 || parseInt(day) === 11 || parseInt(day) === 22){
+            return v.id === parseInt(day);
+          }else{
+            return v.id === realDay;
+          }    
           })
+          console.log(show);
         setShowValues({
           features: show[0].features,
           22: show[0].impotant
         })
       }
+      console.log(csns);
   }
   return (
     <div>

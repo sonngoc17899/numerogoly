@@ -18,7 +18,7 @@ export const Show = (props) =>{
           <p>Con số ngày sinh: {props.csns}</p>
         </div>
         <div className="key-feature">
-          <div>Những người có Con số ngày sinh {props.csns} thường có các khuynh hướng sau đây:</div>
+          <div>Con số ngày sinh của bạn thường có các khuynh hướng sau đây:</div>
         </div>
         <div className="key-feature">
           <p>{props.showCsns}</p>

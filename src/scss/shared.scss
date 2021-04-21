@@ -11,64 +11,7 @@
     object-fit: inherit;
 }
 .header{
-    .header-content{
-        padding: 1rem;
-        padding-top: 0;
-        display: flex;
-        justify-content: center;
-        height: 3rem;
-        line-height: 3rem;
-        .logo{
-            margin-left: 4rem;
-            color: #4643A0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            .headerImg{
-                img{
-                    width: 5rem;
-                }
-            }
-        }
-        .real-time{
-            margin-top: 1rem;
-            font-size: 1.5rem;
-            margin-right: 5%;
-            font-weight: 600;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            a{
-                text-decoration: none;
-                color: #25292e;
-            }
-        }
-        .covid{
-            height: 4rem;
-            line-height: 4rem;
-            flex-grow: 1;
-            display: flex;
-            button{
-                margin-top: 1rem;
-                color: #707070;
-                width: 22rem;
-                border: 1px solid #707070;
-                border-radius: 1.5rem;
-                height: 3rem;
-                margin-left: 2rem; 
-                font-size: 1rem;
-                background-color: #ffffff;
-                text-decoration: none;
-            }
-            button:focus {
-                outline: none;
-              }
-            .header-img{
-                margin-left: 2rem;
-                img{
-                    height: 6rem;
-                    width: 8rem;
-                }
-            }
-        }
-        
-    }
+    
     .close-menu{
        border-top: 1px solid #dbdbdb;
        border-bottom: 1px solid #dbdbdb;
@@ -76,12 +19,12 @@
        line-height: 3rem;
        .menu{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         #home{
             font-size: 1.2rem;
         }
         .li{
-            margin-right: 2rem;
+            margin-right: 1rem;
             margin-left: 1rem;
             font-size: 0.8rem;
             font-weight: 600;
@@ -191,6 +134,11 @@
                 color: #7579e7;
             }    
         }
+        #isArrows{
+            a{
+                color: #7579e7;
+            } 
+        }
         
 }
         
@@ -259,8 +207,8 @@
             padding-right: 10%;
         }
         .close-menu{
-            padding-left: 10%;
-            padding-right: 10%;
+            // padding-left: 10%;
+            // padding-right: 10%;
         }
        
     }

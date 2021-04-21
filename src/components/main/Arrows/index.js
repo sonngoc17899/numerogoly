@@ -170,7 +170,7 @@ export const Arrows = () =>{
         if(arr4.length !== 0 && arr5.length !== 0 && arr6.length !== 0){
           arrow456.push(1)
         }
-        if(arr7.length !== 0 && arr7.length !== 0 && arr9.length !== 0){
+        if(arr7.length !== 0 && arr8.length !== 0 && arr9.length !== 0){
           arrow789.push(1)
         }
         if(arr1.length === 0 && arr5.length === 0 && arr9.length === 0){
@@ -213,7 +213,6 @@ export const Arrows = () =>{
         })
       }
     }
-    console.log(listArrow);
     const handleClick = () => {
         setMobile(true);
         setBtn(false);
@@ -225,7 +224,7 @@ export const Arrows = () =>{
       
     return(
         <div>
-            {mobile ? <MobileMenu customCsns="isCsns" cancel={cancelClick} /> : ""}
+            {mobile ? <MobileMenu customArrows="isArrows" cancel={cancelClick} /> : ""}
        {btn ? (
         <div>
           <Header time="" arrows="isArrows" btn={handleClick} />

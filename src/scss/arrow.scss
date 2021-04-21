@@ -61,6 +61,11 @@
             }
         }
     }
+    .date{
+        color: #66afe9;
+        padding-top: 5%;
+        padding-bottom: 3%;
+    }
     .back{
         text-align: center;
         padding-bottom: 10%;
@@ -78,5 +83,22 @@
             cursor: pointer;
             background-color: #07689f
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .arrows{
+        .row{
+            padding-left: 10%;
+            padding-right: 10%;
+            .cell{
+                height: 5rem;
+            }
+        }
+    }
+    .show-arrows{
+        padding: 3%;
+        padding-bottom: 10%;
+        background-color: #ffff;
     }
 }

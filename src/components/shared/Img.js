@@ -3,7 +3,7 @@ import '../../scss/shared.scss'
 export const Img = props => {
     const {stage} = props;
     const listImg = {
-        homeImg: "/homeImg.png",
+        homeImg: "/vutru.png",
         headerImg: "/logoImg.png",
         menuIcon: "/menuIcon.png",
         pythago: "/Pythagoras.jpg",

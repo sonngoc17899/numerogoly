@@ -18,12 +18,14 @@ export const Show = (props) =>{
                 <div className="note">
                     Chú ý *Các thông tin dưới đây chỉ mang giá trị tham khảo, không nhất thiết chính xác với mọi trường hợp*
                 </div>
-                <a href={props.href}>
-                    Xem thêm về con số của bạn từ kênh của cô Lê Đỗ Quỳnh Hương
-                </a>
+                
+                  
+        
                 <div className="list-feature">
                 <div className="key-feature">
+                <a href={props.href} target="blank">
                         <p>CON SỐ CHỦ ĐẠO: {props.cscd}</p>
+                        </a>
                     </div>
                     <div className="key-feature">
                         <p>{props.impotant}</p>

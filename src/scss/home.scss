@@ -5,13 +5,13 @@
   }
 .home-main{
     display: flex;
-    padding-left: 20%;
+    padding-left: 5%;
     padding-top: 0;
     padding-right: 5%;
     padding-bottom: 15%;
     margin-top: 0;
     .text{
-      width: 60%;
+      width: 70%;
       margin-top: 8rem;
       text-align: justify;
       color: #646464;
@@ -55,9 +55,10 @@
       }
     }
     .homeImg{
-      flex-grow: 1;
+      margin-top: 6rem;
+      margin-left: 5rem;
       img{
-        width: 80%;
+        width: 100%;
       }
     }
 }
@@ -85,7 +86,7 @@
   }
   button{
     height: 2.5rem;
-    width: 8rem;
+    width: 10rem;
     text-align: center;
     border-radius: 0.5rem;
     border: none;
@@ -154,10 +155,11 @@
     }
   }
 }
-@media only screen and (max-width: 1450px){
+@media only screen and (min-width: 1450px){
   .home-main{
     justify-content: center;
-    padding-left: 22%;
-    padding-right: 5%;
+    // padding-left: 22%;
+    padding-right: 10%;
+    padding-left: 10%;
   }
 }
