@@ -9,9 +9,13 @@ export const Show = (props) => {
     <div className="show-arrows">
     <div className="arrows">
       <div className="row">
-        <Cell value={props.number3}/>
-        <Cell value={props.number6} />
-        <Cell value={props.number9} custom="none-border"/>
+        <Cell value={props.number3} border={props.arrow369 !== "" ? "arrow369": ""}
+         arrow={props.arrow369 !== "" ? "Mũi" : ""}
+        />
+        <Cell value={props.number6} border={props.arrow369 !== "" ? "arrow369": ""} arrow={props.arrow369 !== "" ? "tên" : ""}/>
+        <Cell value={props.number9} custom="none-border" border={props.arrow369 !== "" ? "arrow369": ""}
+        arrow={props.arrow369 !== "" ? "Trí tuệ" : ""}
+        />
       </div>
       <div className="row">
         <Cell value={props.number2} />
@@ -29,7 +33,7 @@ export const Show = (props) => {
     </div>
     <div className="show-arrows">
     <div className="date">
-      <i>Các mũi tên mà bản sở hữu dựa vào biểu đồ ngày sinh</i>
+      <i>Các mũi tên mà bạn sở hữu dựa vào biểu đồ ngày sinh</i>
     </div>
       <div className="the-arrows">
         <div className="arrow">
@@ -489,6 +493,7 @@ Nên nhớ, trẻ con có Mũi tên trống 3-5-7 cần rất nhiều tình thư
           {props.fullArrow}
       </div>
     </div>
+
     <div className="back">
                   <button onClick={props.click}>Xem ngày sinh khác</button>
         </div>

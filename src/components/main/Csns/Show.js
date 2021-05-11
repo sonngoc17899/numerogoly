@@ -7,6 +7,9 @@ export const Show = (props) =>{
     return(
         <div className="show">
           <Img customImg="img" stage={"csns"}/>
+          {/* <div className="number">
+                    {props.csns}
+                </div> */}
           <div className="feature">
           <div className="date">
                   {props.name} ({props.date})

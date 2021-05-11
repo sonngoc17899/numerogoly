@@ -1,9 +1,12 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
 import {Home} from './components/Home';
+import {Provider} from 'react-redux'
 import {Cscd} from './components/main/Cscd/index';
 import {Csns} from './components/main/Csns/index'
 import {Arrows} from './components/main/Arrows/index.js'
+import store from './redux/store'
+
 function App() {
   return (
    <div>

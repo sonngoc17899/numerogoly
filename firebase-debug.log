@@ -1,0 +1,114 @@
+[debug] [2021-04-28T17:12:35.569Z] ----------------------------------------------------------------------
+[debug] [2021-04-28T17:12:35.571Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-04-28T17:12:35.571Z] CLI Version:   9.10.0
+[debug] [2021-04-28T17:12:35.571Z] Platform:      win32
+[debug] [2021-04-28T17:12:35.571Z] Node Version:  v15.14.0
+[debug] [2021-04-28T17:12:35.577Z] Time:          Thu Apr 29 2021 00:12:35 GMT+0700 (Indochina Time)
+[debug] [2021-04-28T17:12:35.577Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-28T17:12:35.579Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-04-28T17:12:35.598Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-28T17:12:35.598Z] > authorizing via signed-in user (sonngoc17899@gmail.com)
+[debug] [2021-04-28T17:12:35.598Z] [iam] checking project nhansohoc-d4e4d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-04-28T17:12:35.599Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-28T17:12:35.599Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-28T17:12:36.031Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 28 Apr 2021 17:12:36 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-28T17:12:36.040Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/nhansohoc-d4e4d:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-04-28T17:12:36.264Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-04-28T17:12:36.265Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2021-04-28T17:12:37.168Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 28 Apr 2021 17:12:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=858","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-28T17:12:37.171Z] > refreshing access token with scopes: []
+[debug] [2021-04-28T17:12:37.171Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-28T17:12:37.304Z] <<< HTTP RESPONSE 200 {"date":"Wed, 28 Apr 2021 17:12:37 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-28T17:12:37.328Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nhansohoc-d4e4d [none]
+[debug] [2021-04-28T17:12:37.939Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nhansohoc-d4e4d 200
+[debug] [2021-04-28T17:12:37.939Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nhansohoc-d4e4d {"projectId":"nhansohoc-d4e4d","projectNumber":"261277133352","displayName":"nhansohoc","name":"projects/nhansohoc-d4e4d","resources":{"hostingSite":"nhansohoc-d4e4d"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'nhansohoc-d4e4d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-04-28T17:12:37.950Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-28T17:12:37.951Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-28T17:12:38.124Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 28 Apr 2021 17:12:38 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-28T17:12:38.137Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/nhansohoc-d4e4d/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-04-28T17:12:39.675Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 28 Apr 2021 17:12:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[nhansohoc-d4e4d]: beginning deploy... 
+[info] i  hosting[nhansohoc-d4e4d]: found 27 files in build 
+[debug] [2021-04-28T17:12:40.085Z] > refreshing access token with scopes: []
+[debug] [2021-04-28T17:12:40.086Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-28T17:12:40.087Z] [hosting] hash cache [YnVpbGQ] stored for 27 files
+[debug] [2021-04-28T17:12:40.087Z] [hosting][hash queue][FINAL] {"max":392,"min":1,"avg":20.333333333333332,"active":0,"complete":27,"success":27,"errored":0,"retried":0,"total":27,"elapsed":396}
+[debug] [2021-04-28T17:12:40.256Z] <<< HTTP RESPONSE 200 {"date":"Wed, 28 Apr 2021 17:12:40 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-28T17:12:40.265Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80:populateFiles [none]
+[debug] [2021-04-28T17:12:40.266Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80:populateFiles {"files":{"/csns.png":"c990db36efa35ccd914de257469e64d8e6f6da8ce6fa925126cf2ef9d07f9645","/fb.png":"7b17913fa0416031b84d71b201aa4338fffa17300b596c5650401e45e6b161d7","/headerHome.png.jpg":"2dd6555ab48c7b79b2bc9e30d99dc68d5ac9cc9b2a0c50fd56f2adf4cb6e122b","/home.png":"e242360f199fe2ff843bd7d317e614e0470c277f77243a4e83f8d2cc2ae25f3a","/homeImg.png":"3c44f57209db31a07c6eba99512b22f5ba5435677d90b92e9d2783a75dacd66d","/iconsHome.png":"be0f18117f6fef16662acf359c689e768b4b3435343cda26d639efa63727764f","/ig.png":"a76b7263313596f2c82315343f3452b54c713c51d8ff36edee11d2bef903463d","/imgCsns.png":"5eef9646937119b02fa70553576d227d29ed18e75bc685e60b925af4204a78e7","/logoImg.png":"1f1402548693fc82f2899b60840bd79d17c1a753cfe6a93c77e85c30dcbcb25c","/menuIcon.png":"bb2c850bb1de8415e448010b49f0fab925f9dfcdad6551a16b7ce0442665f295","/pale-wear-mask-virus-is-everywhere.png":"c4e70415567689bf540fbc8e4099972d990da18414c1c13b2f38bb17ae9a1405","/Pythagoras.jpg":"e0725a81257815e8f435e1186a784686a3d624aa545a43cfb3c22411916fba88","/science.png":"4fdf162d60aa62b4439593634b687bdb44f23e2956a3f2cbe58cc6bee21600f9","/vutru.png":"f416eb388feeb04ec88f236369c2b1d0a872a992376e90417487eb02294b4e35","/youtube.png":"d76ccc7e568d011ea9d9a9b0aba0b0cbd12027311992fa163b63a2fce2c63964","/youtubebig.png":"9874c0cc7d9e49ca011b078a2bf658d02aebcae4cc8299e3c5c1c3a55d9a0c2b","/asset-manifest.json":"bbef3e3d0f4cea7614b5176f07b026c7495d57f9c3130a30211af4dd99f0ef4a","/index.html":"77c64973e98d718665e24a9de4cba2ff35c9406d84f974510534cb4dc74a0a7d","/static/css/main.b4f876ab.chunk.css":"9341ca324279bab0bd044fa0ec1c42db39fc6a9d70cecc801bc00e51da209187","/static/css/main.b4f876ab.chunk.css.map":"0e271bd53e9241e850a08894551bcc37bce0f1c91dcd211826a9d6b56822847b","/static/js/runtime-main.248907bc.js":"ca8d0ff71c3da13b31d92df062625f7494f5e38e1e76d4c11bb68bb37ba1ca2b","/static/js/runtime-main.248907bc.js.map":"6f0a33bee115eb5139a5a241badc45c2fcd2cea689e3d49e18cc8d8d564c909a","/static/js/2.24514c05.chunk.js.LICENSE.txt":"27bbc09898bef430cffc3391e1e34a6d34f3a2f55093888656b7c49b8f561454","/static/js/main.44d08a7f.chunk.js.map":"cb85e64ba00d0d6c0b5ee017362f5f1f940db671c58c3c3c23dc6bdff3b20066","/static/js/main.44d08a7f.chunk.js":"455c888d38defe0e7c86cfa12aa811ba595528e5cb1fec01eab05960f8d6000d","/static/js/2.24514c05.chunk.js":"22341282733bb0b8e395b186cfb4c1f989f74bb9611a983925b02bed8082a019","/static/js/2.24514c05.chunk.js.map":"a376d038727ead46dec08d7815d9f7685010b59ab1d84bc0c2af2bcbc8fa2d42"}}
+[debug] [2021-04-28T17:12:41.510Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80:populateFiles 200
+[debug] [2021-04-28T17:12:41.510Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80:populateFiles {"uploadRequiredHashes":["455c888d38defe0e7c86cfa12aa811ba595528e5cb1fec01eab05960f8d6000d","77c64973e98d718665e24a9de4cba2ff35c9406d84f974510534cb4dc74a0a7d","bbef3e3d0f4cea7614b5176f07b026c7495d57f9c3130a30211af4dd99f0ef4a","cb85e64ba00d0d6c0b5ee017362f5f1f940db671c58c3c3c23dc6bdff3b20066","9341ca324279bab0bd044fa0ec1c42db39fc6a9d70cecc801bc00e51da209187","0e271bd53e9241e850a08894551bcc37bce0f1c91dcd211826a9d6b56822847b"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files"}
+[debug] [2021-04-28T17:12:41.513Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/455c888d38defe0e7c86cfa12aa811ba595528e5cb1fec01eab05960f8d6000d [none]
+[debug] [2021-04-28T17:12:41.514Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/455c888d38defe0e7c86cfa12aa811ba595528e5cb1fec01eab05960f8d6000d [stream]
+[debug] [2021-04-28T17:12:41.515Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/77c64973e98d718665e24a9de4cba2ff35c9406d84f974510534cb4dc74a0a7d [none]
+[debug] [2021-04-28T17:12:41.515Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/77c64973e98d718665e24a9de4cba2ff35c9406d84f974510534cb4dc74a0a7d [stream]
+[debug] [2021-04-28T17:12:41.516Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/bbef3e3d0f4cea7614b5176f07b026c7495d57f9c3130a30211af4dd99f0ef4a [none]
+[debug] [2021-04-28T17:12:41.516Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/bbef3e3d0f4cea7614b5176f07b026c7495d57f9c3130a30211af4dd99f0ef4a [stream]
+[debug] [2021-04-28T17:12:41.516Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/cb85e64ba00d0d6c0b5ee017362f5f1f940db671c58c3c3c23dc6bdff3b20066 [none]
+[debug] [2021-04-28T17:12:41.516Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/cb85e64ba00d0d6c0b5ee017362f5f1f940db671c58c3c3c23dc6bdff3b20066 [stream]
+[debug] [2021-04-28T17:12:41.517Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/9341ca324279bab0bd044fa0ec1c42db39fc6a9d70cecc801bc00e51da209187 [none]
+[debug] [2021-04-28T17:12:41.517Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/9341ca324279bab0bd044fa0ec1c42db39fc6a9d70cecc801bc00e51da209187 [stream]
+[debug] [2021-04-28T17:12:41.518Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/0e271bd53e9241e850a08894551bcc37bce0f1c91dcd211826a9d6b56822847b [none]
+[debug] [2021-04-28T17:12:41.518Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/0e271bd53e9241e850a08894551bcc37bce0f1c91dcd211826a9d6b56822847b [stream]
+[debug] [2021-04-28T17:12:41.518Z] [hosting][populate queue][FINAL] {"max":1428,"min":1428,"avg":1428,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1433}
+[debug] [2021-04-28T17:12:41.518Z] [hosting] uploads queued: 6
+[debug] [2021-04-28T17:12:43.726Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/0e271bd53e9241e850a08894551bcc37bce0f1c91dcd211826a9d6b56822847b 200
+[debug] [2021-04-28T17:12:43.726Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/0e271bd53e9241e850a08894551bcc37bce0f1c91dcd211826a9d6b56822847b [stream]
+[debug] [2021-04-28T17:12:43.754Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/9341ca324279bab0bd044fa0ec1c42db39fc6a9d70cecc801bc00e51da209187 200
+[debug] [2021-04-28T17:12:43.754Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/9341ca324279bab0bd044fa0ec1c42db39fc6a9d70cecc801bc00e51da209187 [stream]
+[debug] [2021-04-28T17:12:43.755Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/77c64973e98d718665e24a9de4cba2ff35c9406d84f974510534cb4dc74a0a7d 200
+[debug] [2021-04-28T17:12:43.756Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/77c64973e98d718665e24a9de4cba2ff35c9406d84f974510534cb4dc74a0a7d [stream]
+[debug] [2021-04-28T17:12:43.775Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/455c888d38defe0e7c86cfa12aa811ba595528e5cb1fec01eab05960f8d6000d 200
+[debug] [2021-04-28T17:12:43.776Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/455c888d38defe0e7c86cfa12aa811ba595528e5cb1fec01eab05960f8d6000d [stream]
+[debug] [2021-04-28T17:12:43.785Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/cb85e64ba00d0d6c0b5ee017362f5f1f940db671c58c3c3c23dc6bdff3b20066 200
+[debug] [2021-04-28T17:12:43.786Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/cb85e64ba00d0d6c0b5ee017362f5f1f940db671c58c3c3c23dc6bdff3b20066 [stream]
+[debug] [2021-04-28T17:12:43.788Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/bbef3e3d0f4cea7614b5176f07b026c7495d57f9c3130a30211af4dd99f0ef4a 200
+[debug] [2021-04-28T17:12:43.789Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80/files/bbef3e3d0f4cea7614b5176f07b026c7495d57f9c3130a30211af4dd99f0ef4a [stream]
+[debug] [2021-04-28T17:12:43.789Z] [hosting][upload queue][FINAL] {"max":2277,"min":2214,"avg":2252.5,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":2278}
+[info] +  hosting[nhansohoc-d4e4d]: file upload complete 
+[debug] [2021-04-28T17:12:43.791Z] [hosting] deploy completed after 4114ms
+[debug] [2021-04-28T17:12:44.194Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "nhansohoc-d4e4d"
+    },
+    "site": "nhansohoc-d4e4d",
+    "version": "sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80"
+  }
+]
+[info] i  hosting[nhansohoc-d4e4d]: finalizing version... 
+[debug] [2021-04-28T17:12:44.195Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-28T17:12:44.196Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-28T17:12:44.323Z] <<< HTTP RESPONSE 200 {"date":"Wed, 28 Apr 2021 17:12:44 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-28T17:12:44.344Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-04-28T17:12:45.476Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 28 Apr 2021 17:12:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-28T17:12:45.477Z] [hosting] finalized version for nhansohoc-d4e4d: {"name":"sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-04-28T17:12:39.278860Z","createUser":{"email":"sonngoc17899@gmail.com"},"finalizeTime":"2021-04-28T17:12:45.404342Z","finalizeUser":{"email":"sonngoc17899@gmail.com"}}
+[info] +  hosting[nhansohoc-d4e4d]: version finalized 
+[info] i  hosting[nhansohoc-d4e4d]: releasing new version... 
+[debug] [2021-04-28T17:12:45.478Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/nhansohoc-d4e4d/releases?version_name=sites/nhansohoc-d4e4d/versions/b59c78b2ffaa8b80  
+ {"message":null}
